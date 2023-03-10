@@ -66,7 +66,7 @@ public class TestLogin {
     @When("User click button logout")
     public void user_click_button_logout(){
         loginPage.setBtnLogout();
-        System.out.println("User click button logout");
+        System.out.println("User click button logout\n");
     }
 
     @An("User enter invalid username")
@@ -93,7 +93,7 @@ public class TestLogin {
     @Then("User get message invalid credential")
     public void user_get_message_invalid_credential(){
         delay(3);
-        System.out.println("User get message invalid credential");
+        System.out.println("User get message invalid credential\n");
         Assert.assertEquals(loginPage.getInvalidCredentials(), "Invalid credentials");
     }
 
