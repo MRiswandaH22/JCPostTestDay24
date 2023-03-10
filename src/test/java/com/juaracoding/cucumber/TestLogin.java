@@ -72,14 +72,14 @@ public class TestLogin {
     @An("User enter invalid username")
     public void user_enter_invalid_username(){
         delay(3);
-        System.out.println("User input valid username");
+        System.out.println("User input invalid username");
             loginPage.inputUsername("AdminCuy");
     }
 
     @And("User enter invalid password")
     public void user_enter_invalid_password(){
         delay(3);
-        System.out.println("User input valid password");
+        System.out.println("User input invalid password");
         loginPage.inputPassword("admin123456");
     }
     @AfterAll
